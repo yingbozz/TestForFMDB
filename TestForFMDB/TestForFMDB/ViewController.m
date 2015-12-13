@@ -23,7 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *docPath = PATH_OF_DOCUMENT;
+    
     _dbPath = [docPath stringByAppendingPathComponent:@"sqlite.db"];
     
     
